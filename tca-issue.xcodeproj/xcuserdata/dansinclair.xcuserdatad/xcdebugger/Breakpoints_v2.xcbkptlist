@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A767D4EE-C384-4B92-A1FF-BDB15F8C0754"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A17AF3F-FF09-4A6F-8CF7-7B585EDCEEBB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tca-issue/ItemListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4A17AF3F-FF09-4A6F-8CF7-7B585EDCEEBB - 19852f3a934fa5d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; ComposableArchitecture.WithViewStore&lt;tca_issue.ItemListFeature.State, tca_issue.ItemListFeature.Action, SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;Swift.String&gt;, Swift.String, SwiftUI.NavigationLink&lt;ComposableArchitecture._NavigationLinkStoreContent&lt;tca_issue.ItemListFeature.Path.State, SwiftUI.Text&gt;, Swift.Never&gt;&gt;&gt;&gt; in tca_issue.ItemListView.body.getter : some"
+                  moduleName = "tca-issue"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dansinclair/Desktop/tca-issue/tca-issue/ItemListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "771">
+               </Location>
+               <Location
+                  uuid = "4A17AF3F-FF09-4A6F-8CF7-7B585EDCEEBB - 34e4a5ae4297602e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (tca_issue.ItemListFeature.Path.State) -&gt; ComposableArchitecture.CaseLet&lt;tca_issue.ItemListFeature.Path.State, tca_issue.ItemListFeature.Path.Action, tca_issue.ItemDetailFeature.State, tca_issue.ItemDetailFeature.Action, tca_issue.ItemDetailView&gt; in tca_issue.ItemListView.body.getter : some"
+                  moduleName = "tca-issue"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dansinclair/Desktop/tca-issue/tca-issue/ItemListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  uuid = "4A17AF3F-FF09-4A6F-8CF7-7B585EDCEEBB - 34e4a5ae429760ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (tca_issue.ItemListFeature.Path.State) -&gt; ComposableArchitecture.CaseLet&lt;tca_issue.ItemListFeature.Path.State, tca_issue.ItemListFeature.Path.Action, tca_issue.ItemDetailFeature.State, tca_issue.ItemDetailFeature.Action, tca_issue.ItemDetailView&gt; in tca_issue.ItemListView.body.getter : some"
+                  moduleName = "tca-issue"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dansinclair/Desktop/tca-issue/tca-issue/ItemListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1477">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

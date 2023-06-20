@@ -1,30 +1,15 @@
 //
-//  tca_issueApp.swift
+//  ItemListFeature.swift
 //  tca-issue
 //
 //  Created by Dan Sinclair on 20/06/2023.
 //
 
 import ComposableArchitecture
-import SwiftUI
 
-@main
-struct tca_issueApp: App {
-    let store = Store(
-        initialState: AppFeature.State()) {
-            AppFeature()
-        }
-    
-    var body: some Scene {
-        WindowGroup {
-            AppView(store: store)
-//            AppViewSUI()
-        }
-    }
-}
-
-struct AppFeature: ReducerProtocol {
-    struct State {
+struct ItemListFeature: ReducerProtocol {
+    struct State: Equatable {
+        var items: [String] = ["a", "b", "c"]
         var path = StackState<Path.State>()
     }
     
@@ -45,19 +30,19 @@ struct AppFeature: ReducerProtocol {
     }
 }
 
-extension AppFeature {
+extension ItemListFeature {
     struct Path: ReducerProtocol {
-        enum State {
-            case itemList(ItemListFeature.State)
+        enum State: Equatable {
+            case itemDetail(ItemDetailFeature.State)
         }
         
-        enum Action {
-            case itemList(ItemListFeature.Action)
+        enum Action: Equatable {
+            case itemDetail(ItemDetailFeature.Action)
         }
         
         var body: some ReducerProtocolOf<Self> {
-            Scope(state: /State.itemList, action: /Action.itemList) {
-                ItemListFeature()
+            Scope(state: /State.itemDetail, action: /Action.itemDetail) {
+                ItemDetailFeature()
             }
         }
     }
