@@ -19,10 +19,18 @@ struct AppView: View {
             switch state {
             case .itemList:
                 CaseLet(
-                      state: /AppFeature.Path.State.itemList,
-                      action: AppFeature.Path.Action.itemList,
-                      then: ItemListView.init(store:)
-                    )
+                    state: /AppFeature.Path.State.itemList,
+                    action: AppFeature.Path.Action.itemList,
+                    then: ItemListView.init(store:)
+                )
+                
+            case .itemDetail:
+                CaseLet(
+                    state: /AppFeature.Path.State.itemDetail,
+                    action: AppFeature.Path.Action.itemDetail,
+                    then: ItemDetailView.init(store:)
+                )
+
             }
         }
     }

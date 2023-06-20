@@ -14,8 +14,8 @@
             filePath = "tca-issue/ItemListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -63,6 +63,21 @@
                   startingLineNumber = "25"
                   endingLineNumber = "25"
                   offsetFromSymbolStart = "1477">
+               </Location>
+               <Location
+                  uuid = "4A17AF3F-FF09-4A6F-8CF7-7B585EDCEEBB - 69363f93d1d8575a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tca_issue.ItemListView.body.getter : some"
+                  moduleName = "tca-issue"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dansinclair/Desktop/tca-issue/tca-issue/ItemListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "771">
                </Location>
             </Locations>
          </BreakpointContent>

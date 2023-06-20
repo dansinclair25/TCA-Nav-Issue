@@ -35,6 +35,12 @@ struct AppFeature: ReducerProtocol {
     var body: some ReducerProtocolOf<Self> {
         Reduce { state, action in
             switch action {
+            case let .path(.element(id: id, action: .itemList(.itemTapped(item)))):
+                guard case .itemList = state.path[id: id] else { return .none }
+                
+                state.path.append(.itemDetail(ItemDetailFeature.State(item: item)))
+                return .none
+                
             case .path:
                 return .none
             }
@@ -48,14 +54,20 @@ struct AppFeature: ReducerProtocol {
 extension AppFeature {
     struct Path: ReducerProtocol {
         enum State {
+            case itemDetail(ItemDetailFeature.State)
             case itemList(ItemListFeature.State)
         }
         
         enum Action {
+            case itemDetail(ItemDetailFeature.Action)
             case itemList(ItemListFeature.Action)
         }
         
         var body: some ReducerProtocolOf<Self> {
+            Scope(state: /State.itemDetail, action: /Action.itemDetail) {
+                ItemDetailFeature()
+            }
+            
             Scope(state: /State.itemList, action: /Action.itemList) {
                 ItemListFeature()
             }
